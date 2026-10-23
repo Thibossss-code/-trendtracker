@@ -1,0 +1,15 @@
+{
+  "name": "TrendTracker $250+ - Auto Trading",
+  "short_name": "TrendTracker",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0e14",
+  "theme_color": "#16a34a",
+  "icons": [
+    {
+      "src": "IMG-20261023-WA6532.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
