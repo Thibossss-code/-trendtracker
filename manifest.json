@@ -1,13 +1,19 @@
 {
-  "name": "TrendTracker $250+ - Auto Trading",
+  "name": "TrendTracker $250+ FOREX",
   "short_name": "TrendTracker",
-  "start_url": "./index.html",
+  "description": "Live Forex scanner with $250+ strategy XAUUSD EURUSD GBPUSD NAS100 signals since 2008",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#0a0e14",
-  "theme_color": "#16a34a",
+  "background_color": "#000000",
+  "theme_color": "#00ff00",
   "icons": [
     {
-      "src": "IMG-20261023-WA6532.jpg",
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "IMG-20261023-WA653.jpg",
       "sizes": "512x512",
       "type": "image/jpeg"
     }
