@@ -59,9 +59,9 @@ body{font-family:'Inter',sans-serif;background:#0a0e14;color:white}
 <p class="text-xs text-gray-400 mt-1">ID thabopeterkalake locked. Scanner LIVE every 5 sec.</p>
 <!-- BUTTON 1 = TRADINGVIEW ONLY -->
 <a href="https://www.tradingview.com/pricing/?share_your_love=thabopeterkalake" target="_blank" class="block mt-3 bg-yellow-500 text-black text-center py-3 rounded-xl font-extrabold">1. Connect TradingView - ID: thabopeterkalake →</a>
-<!-- BUTTON 2 = PAYHIP ONLY - FIXED FOR $9 COLLECTION -->
+<!-- BUTTON 2 = PAYHIP ONLY - FIXED FOR $9 COLLECTION - OWN LINK -->
 <button onclick="unlockAuto()" class="block w-full mt-2 btn-payhip py-3 rounded-xl font-bold shadow-lg">2. Unlock Automation - $9 via Payhip</button>
-<p class="text-[10px] text-gray-500 mt-2 text-center">FIXED 148 Lines • thabopeterkalake • payhip.com/b/vD3W1 • Button2=Payhip ONLY</p>
+<p class="text-[10px] text-gray-500 mt-2 text-center">FIXED 148 Lines • thabopeterkalake • payhip.com/b/0ybhq • Button2=Payhip ONLY - TRENDTRACKER OWN LINK</p>
 </div>
 </div>
 <!-- CALCULATOR -->
@@ -92,10 +92,10 @@ body{font-family:'Inter',sans-serif;background:#0a0e14;color:white}
 </div>
 </div>
 <script>
-// CONFIG - FIXED
+// CONFIG - FIXED - TRENDTRACKER OWN PAYHIP LINK
 const tvMap={XAUUSD:'OANDA:XAUUSD',EURUSD:'FX:EURUSD',GBPUSD:'FX:GBPUSD',NAS100:'NASDAQ:NDX',BTCUSD:'BINANCE:BTCUSD',US30:'TVC:DJI'};
 const assets=[{name:'XAUUSD'},{name:'EURUSD'},{name:'GBPUSD'},{name:'NAS100'},{name:'BTCUSD'},{name:'US30'}];
-const PAYHIP_LINK='https://payhip.com/b/vD3W1';
+const PAYHIP_LINK='https://payhip.com/b/0ybhq';
 const TV_LINK='https://www.tradingview.com/pricing/?share_your_love=thabopeterkalake';
 // LIVE SIGNAL
 function getLiveSignal(){
@@ -130,10 +130,10 @@ function calc(){
  document.getElementById('riskOut').innerText='$'+risk.toFixed(2);
  document.getElementById('lotOut').innerText=lots+' Lots • '+perc+'% Risk';
 }
-// FIXED - BUTTON 2 = PAYHIP ONLY FOR $9 COLLECTION - 148 LINES
+// FIXED - BUTTON 2 = PAYHIP ONLY FOR $9 COLLECTION - OWN TRENDTRACKER LINK
 function unlockAuto(){
   window.open(PAYHIP_LINK,'_blank');
-  console.log('Button 2 clicked - Payhip only - $9 collection - ID thabopeterkalake');
+  console.log('Button 2 clicked - Payhip only - $9 collection - ID thabopeterkalake - OWN LINK 0ybhq');
 }
 // BOT
 function askBot(){
@@ -145,7 +145,7 @@ function askBot(){
  if(l.includes('lot')||l.includes('risk')) ans="With $250: 1% risk = $2.50. Lots = Risk/SL. $2.50/50pips = 0.05 lots. Min $250 rule protects. ID: thabopeterkalake";
  else if(l.includes('xau')||l.includes('gold')) ans="XAUUSD: M15 entry, H1 trend. Tap XAUUSD card → opens OANDA:XAUUSD chart. Scanner LIVE 5s. ID thabopeterkalake locked.";
  else if(l.includes('tradingview')||l.includes('thabopeter')) ans="Affiliate ID thabopeterkalake is LOCKED everywhere! Link: tradingview.com/pricing/?share_your_love=thabopeterkalake - Never erases now.";
- else if(l.includes('payhip')||l.includes('automat')||l.includes('$9')) ans="Payhip $9: payhip.com/b/vD3W1 → Unlock Automation. After pay you get template. TradingView ID thabopeterkalake also earns.";
+ else if(l.includes('payhip')||l.includes('automat')||l.includes('$9')) ans="Payhip $9: payhip.com/b/0ybhq → Unlock Automation OWN TRENDTRACKER LINK. After pay you get template. TradingView ID thabopeterkalake also earns.";
  else ans=`You asked: "${q}". As tutor since 2008: Use $250 min, 1% risk, 30-50 pips SL. Tap any asset to see TradingView chart. Scanner ACTIVE. My ID thabopeterkalake.`;
  box.innerHTML+=`<div class="bg-[#151b26] p-2 rounded text-sm">🤖 Bot: ${ans}</div>`;
  input.value='';box.scrollTop=box.scrollHeight;
