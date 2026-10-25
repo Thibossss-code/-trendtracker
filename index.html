@@ -4,16 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="manifest" href="manifest.json">
- <title>TrendTracker $250+ - ACTIVE 105 Lines</title>
+<title>TrendTracker $250+ - FIXED 148 Lines - Button2 Payhip</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
+/* FIXED v148 - Button2 Payhip Only - ID thabopeterkalake Locked */
 body{font-family:'Inter',sans-serif;background:#0a0e14;color:white}
 .glass{background:#151b26;border:1px solid #222}
 .signal-hover:hover{transform:scale(1.02);transition:0.2s;cursor:pointer}
+.btn-payhip{background:#10b981;transition:0.2s}
+.btn-payhip:hover{background:#059669;transform:scale(1.02)}
 </style>
 </head>
 <body class="min-h-screen pb-20">
+<!-- HEADER - FIXED -->
 <div class="p-4 flex justify-between items-center">
 <div class="flex items-center gap-2">
 <span class="text-2xl">🌿</span>
@@ -21,6 +25,7 @@ body{font-family:'Inter',sans-serif;background:#0a0e14;color:white}
 </div>
 <div class="text-xs bg-green-900 text-green-300 px-3 py-1 rounded-full animate-pulse">Tutor since 2008 • ACTIVE</div>
 </div>
+<!-- BALANCE CARD -->
 <div class="mx-4 glass rounded-2xl p-4">
 <div class="flex justify-between">
 <div>
@@ -39,22 +44,27 @@ body{font-family:'Inter',sans-serif;background:#0a0e14;color:white}
 <div class="bg-[#0a0e14] rounded-xl p-2"><p class="text-[10px] text-gray-400">Payhip</p><p class="text-green-400 font-bold text-[11px]">$9 Active</p></div>
 </div>
 </div>
+<!-- TABS -->
 <div class="flex gap-2 px-4 mt-6 overflow-x-auto">
 <button onclick="showTab('scanner')" id="tab-scanner" class="bg-green-600 px-4 py-2 rounded-full font-bold text-sm">Scanner • ACTIVE</button>
 <button onclick="showTab('calc')" id="tab-calc" class="bg-[#151b26] px-4 py-2 rounded-full font-bold text-sm text-gray-400">Calculator</button>
 <button onclick="showTab('bot')" id="tab-bot" class="bg-[#151b26] px-4 py-2 rounded-full font-bold text-sm text-gray-400">Tutor Bot • ACTIVE</button>
 </div>
+<!-- SCANNER VIEW - BUTTONS FIXED -->
 <div id="view-scanner" class="px-4 mt-4 space-y-3">
 <div class="flex gap-2 mb-2"><span class="bg-green-600 text-xs px-3 py-1 rounded-full animate-pulse">M15 • LIVE</span><span class="bg-[#151b26] text-xs px-3 py-1 rounded-full">H1</span><span class="bg-[#151b26] text-xs px-3 py-1 rounded-full">H4</span><span class="bg-[#151b26] text-xs px-3 py-1 rounded-full">D1</span><span class="text-xs text-green-400 ml-auto" id="liveTimer">Tap asset → Chart</span></div>
 <div id="assetList"></div>
 <div class="glass rounded-2xl p-4 mt-6 border border-yellow-900/50">
 <h3 class="font-bold">Automate Trading for $9? (ACTIVE)</h3>
 <p class="text-xs text-gray-400 mt-1">ID thabopeterkalake locked. Scanner LIVE every 5 sec.</p>
+<!-- BUTTON 1 = TRADINGVIEW ONLY -->
 <a href="https://www.tradingview.com/pricing/?share_your_love=thabopeterkalake" target="_blank" class="block mt-3 bg-yellow-500 text-black text-center py-3 rounded-xl font-extrabold">1. Connect TradingView - ID: thabopeterkalake →</a>
-<button onclick="unlockAuto()" class="block w-full mt-2 bg-green-600 py-3 rounded-xl font-bold shadow-lg">2. Unlock Automation - $9 via Payhip</button>
-<p class="text-[10px] text-gray-500 mt-2 text-center">ACTIVE 105 Lines • thabopeterkalake • payhip.com/b/vD3W1</p>
+<!-- BUTTON 2 = PAYHIP ONLY - FIXED FOR $9 COLLECTION -->
+<button onclick="unlockAuto()" class="block w-full mt-2 btn-payhip py-3 rounded-xl font-bold shadow-lg">2. Unlock Automation - $9 via Payhip</button>
+<p class="text-[10px] text-gray-500 mt-2 text-center">FIXED 148 Lines • thabopeterkalake • payhip.com/b/vD3W1 • Button2=Payhip ONLY</p>
 </div>
 </div>
+<!-- CALCULATOR -->
 <div id="view-calc" class="hidden px-4 mt-4">
 <div class="glass rounded-2xl p-4">
 <label class="text-sm text-gray-400">Balance (USD) - Min $250</label>
@@ -68,6 +78,7 @@ body{font-family:'Inter',sans-serif;background:#0a0e14;color:white}
 <button onclick="calc()" class="w-full mt-4 bg-green-600 py-3 rounded-xl font-bold">Calculate Position</button>
 </div>
 </div>
+<!-- BOT VIEW -->
 <div id="view-bot" class="hidden px-4 mt-4">
 <div class="glass rounded-2xl p-4">
 <div id="chatBox" class="bg-[#0a0e14] rounded-xl p-3 h-72 overflow-y-auto space-y-2">
@@ -81,8 +92,12 @@ body{font-family:'Inter',sans-serif;background:#0a0e14;color:white}
 </div>
 </div>
 <script>
+// CONFIG - FIXED
 const tvMap={XAUUSD:'OANDA:XAUUSD',EURUSD:'FX:EURUSD',GBPUSD:'FX:GBPUSD',NAS100:'NASDAQ:NDX',BTCUSD:'BINANCE:BTCUSD',US30:'TVC:DJI'};
 const assets=[{name:'XAUUSD'},{name:'EURUSD'},{name:'GBPUSD'},{name:'NAS100'},{name:'BTCUSD'},{name:'US30'}];
+const PAYHIP_LINK='https://payhip.com/b/vD3W1';
+const TV_LINK='https://www.tradingview.com/pricing/?share_your_love=thabopeterkalake';
+// LIVE SIGNAL
 function getLiveSignal(){
  const signals=['BUY','SELL','WAIT'];
  const descs={BUY:['Bullish • Breakout','Uptrend • Support hold','Momentum up'],SELL:['Bearish • Momentum down','Downtrend • Resistance','Breakdown • Weak'],WAIT:['Consolidating • No signal','Ranging • Wait','Sideways • No trade']};
@@ -115,7 +130,12 @@ function calc(){
  document.getElementById('riskOut').innerText='$'+risk.toFixed(2);
  document.getElementById('lotOut').innerText=lots+' Lots • '+perc+'% Risk';
 }
-function unlockAuto(){window.open('https://payhip.com/b/vD3W1','_blank');window.open('https://www.tradingview.com/pricing/?share_your_love=thabopeterkalake','_blank');}
+// FIXED - BUTTON 2 = PAYHIP ONLY FOR $9 COLLECTION - 148 LINES
+function unlockAuto(){
+  window.open(PAYHIP_LINK,'_blank');
+  console.log('Button 2 clicked - Payhip only - $9 collection - ID thabopeterkalake');
+}
+// BOT
 function askBot(){
  const input=document.getElementById('botInput');
  const box=document.getElementById('chatBox');
@@ -126,7 +146,7 @@ function askBot(){
  else if(l.includes('xau')||l.includes('gold')) ans="XAUUSD: M15 entry, H1 trend. Tap XAUUSD card → opens OANDA:XAUUSD chart. Scanner LIVE 5s. ID thabopeterkalake locked.";
  else if(l.includes('tradingview')||l.includes('thabopeter')) ans="Affiliate ID thabopeterkalake is LOCKED everywhere! Link: tradingview.com/pricing/?share_your_love=thabopeterkalake - Never erases now.";
  else if(l.includes('payhip')||l.includes('automat')||l.includes('$9')) ans="Payhip $9: payhip.com/b/vD3W1 → Unlock Automation. After pay you get template. TradingView ID thabopeterkalake also earns.";
- else ans=`You asked: "${q}". As tutor since 2008: Use $250 min, 1% risk, 30-50 pips SL. Tap any asset to see TradingView chart. Scanner ACTIVE. My ID thabopeterkalake. Ask: lot size, XAUUSD, TradingView.`;
+ else ans=`You asked: "${q}". As tutor since 2008: Use $250 min, 1% risk, 30-50 pips SL. Tap any asset to see TradingView chart. Scanner ACTIVE. My ID thabopeterkalake.`;
  box.innerHTML+=`<div class="bg-[#151b26] p-2 rounded text-sm">🤖 Bot: ${ans}</div>`;
  input.value='';box.scrollTop=box.scrollHeight;
 }
